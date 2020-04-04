@@ -32,7 +32,7 @@ const expensesReducer = (state=initialState , action) => {
               description:action.payload.description,
               amount:action.payload.amount,
             }
-            return {...state , expenses:[...this.state.expenses,newExpense]};
+            return {...state , expenses:[...state.expenses,newExpense]};
       
   
       default:

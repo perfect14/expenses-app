@@ -12,7 +12,7 @@ const store = createStore(expensesReducer , applyMiddleware(thunk));
 
 ReactDOM.render(
     <Provider store={store}>
-    <App />
+        <App />
     </Provider>,
      document.getElementById('root'));
 
